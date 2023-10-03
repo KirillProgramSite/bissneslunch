@@ -1,0 +1,60 @@
+
+/* Шрифты */
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('bebasneuebold.woff2') format('woff2'), url('bebasneuebold.woff') format('woff'), url('bebasneuebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.login-form-wrapper{
+    background-image: url('/bissnes-lunch-frontend/img/bg-form.png');
+    background-repeat: no-repeat;
+    height: 526px;
+}
+
+.login-form-wrapper-mobile{
+    background-image: url('/bissnes-lunch-frontend/img/bg-form.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: none;
+}
+
+.login-form_form h1{
+    font-family: Bebas Neue;
+}
+
+.login-form_form p{
+    font-family: Montserrat;
+}
+
+.login-button{
+    transition: .5s cubic-bezier(0.19, 1, 0.22, 1);
+    border-radius: 9px;
+    background: #911F27;
+    font-family: Bebas Neue;
+    padding: 10px 43px;
+    border: none;
+    color: #FFF;
+    font-size: 24px;
+}
+
+.login-button:hover{
+    background: #630A10;
+}
+
+
+@media (max-width: 480px) {
+    .login-form-wrapper{
+        display: none;
+    }
+    .login-form-wrapper-mobile{
+        display: block;
+    }
+
+    .login-form-wrapper-mobile img{
+        margin-top: 10px;
+        width: 290px;
+    }
+}
