@@ -8,9 +8,15 @@
     font-style: normal;
 }
 
+.form{
+    border-radius: 50px;
+}
+
 .login-form-wrapper{
+    border-radius: 50px;
     background-image: url('/bissnes-lunch-frontend/img/bg-form.png');
     background-repeat: no-repeat;
+    background-size:cover ;
     height: 526px;
 }
 
@@ -56,5 +62,12 @@
     .login-form-wrapper-mobile img{
         margin-top: 10px;
         width: 290px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .login-form-wrapper img{
+        width: 250px;
     }
 }
