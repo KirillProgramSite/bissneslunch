@@ -12,17 +12,35 @@
     border-radius: 50px;
 }
 
+.swiper {
+    padding: 0px 70px;
+    height: 300px;
+}
+
+
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+    content: '';
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-prev:after {
+    content: '';
+}
 .login-form-wrapper{
     border-radius: 50px;
     background-image: url('/bissnes-lunch-frontend/img/bg-form.png');
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-size: cover;
     height: 526px;
 }
 
 .login-form-wrapper-mobile{
+    border-radius: 20px;
     background-image: url('/bissnes-lunch-frontend/img/bg-form.png');
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     display: none;
 }
@@ -51,17 +69,72 @@
 }
 
 
+#link{
+    font-family:Bebas Neue ;
+    font-size: 16px;
+    color: #630A10;
+    margin-right: 24px;
+}
+
+#link:nth-last-child(0){
+    margin-right: 0;
+}
+
+#hero__title {
+    color: #630A10;
+    font-family: Bebas Neue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 32px */
+    letter-spacing: -0.8px;
+}
+
+#hero__par{
+    width: 523px;
+    font-size: 16px; 
+}
+
+.todo__hero-mobile{
+    display: none;
+}
+
+
+.todo__list-item{
+    padding: 20px 30px;
+    width: 270px;
+    border-radius: 22px;
+    background: #FCF0C8;
+}
+
+
+
 @media (max-width: 480px) {
     .login-form-wrapper{
         display: none;
     }
     .login-form-wrapper-mobile{
         display: block;
+
     }
 
     .login-form-wrapper-mobile img{
         margin-top: 10px;
         width: 290px;
+    }
+
+    .todo__hero-mobile{
+        display: block;
+    }
+
+    .todo__hero{
+        display: none;
+    }
+
+    #hero__par{
+        width: 300px;
+        font-size: 16px; 
     }
 }
 
