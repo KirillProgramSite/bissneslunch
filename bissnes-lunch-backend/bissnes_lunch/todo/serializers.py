@@ -1,0 +1,10 @@
+from rest_framework.serializers import ModelSerializer
+
+from todo.models import Todo
+from users.serializers import UserSerializer
+
+class DocumentSerializer(ModelSerializer):
+    user = UserSerializer()
+    class Meta:
+        model = Todo
+        fields = ('id', 'user', 'type_weekend', 'date_from', 'days_weekend', 'date')
