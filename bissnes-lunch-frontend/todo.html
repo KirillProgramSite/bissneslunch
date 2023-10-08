@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -82,64 +81,52 @@
 
     <article class="mt-5 todo__list">
         <div class="container">
-            <h1>Добро пожаловать, кирилл, вот ваш список дел на сегодня:</h1>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="todo__list-item">
-                            <h2>Изготовить для школы №15</h2>
-                            <p>Нужно изготовить меню #1.Школьное</p>
+            <h1 class="mb-5" id="todo__list-title">Добро пожаловать, кирилл, вот ваш список дел на сегодня:</h1>
+        <div class="swiper-slide">
+            <div class="todo__list-item">
+                <h2 id="todo__list-item-title">Изготовить для школы №15</h2>
+                <p id="todo__list-item-par">Нужно изготовить меню #1.Школьное</p>
 
-                            <div class="btn-success d-flex">
-                                <p>Выполнено</p>
-                                <img src="img/check-line.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="todo__list-item">
-                            <h2>Изготовить для школы №15</h2>
-                            <p>Нужно изготовить меню #1.Школьное</p>
-
-                            <div class="btn-success d-flex">
-                                <p>Выполнено</p>
-                                <img src="img/check-line.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="todo__list-item">
-                            <h2>Изготовить для школы №15</h2>
-                            <p>Нужно изготовить меню #1.Школьное</p>
-
-                            <div class="btn-success d-flex">
-                                <p>Выполнено</p>
-                                <img src="img/check-line.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="todo__list-item">
-                            <h2>Изготовить для школы №15</h2>
-                            <p>Нужно изготовить меню #1.Школьное</p>
-
-                            <div class="btn-success d-flex">
-                                <p>Выполнено</p>
-                                <img src="img/check-line.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <div class="btn-success d-flex align-items-start justify-content-between">
+                    <p class="btn-success__text">Выполнено</p>
+                    <img src="img/check-line.svg" alt="">
                 </div>
-                
-                
-            
-                
-                <div class="swiper-button-prev"><img src="img/l.svg" alt=""></div>
-                <div class="swiper-button-next"><img src="img/r.svg" alt=""></div>
-            
-                
-               
             </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="todo__list-item">
+                <h2 id="todo__list-item-title">Изготовить для школы №15</h2>
+                <p id="todo__list-item-par">Нужно изготовить меню #1.Школьное</p>
+
+                <div class="btn-success d-flex align-items-start justify-content-between">
+                    <p class="btn-success__text">Выполнено</p>
+                    <img src="img/check-line.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="todo__list-item">
+                <h2 id="todo__list-item-title">Изготовить для школы №15</h2>
+                <p id="todo__list-item-par">Нужно изготовить меню #1.Школьное</p>
+
+                <div class="btn-success d-flex align-items-start justify-content-between">
+                    <p class="btn-success__text">Выполнено</p>
+                    <img src="img/check-line.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="todo__list-item">
+                <h2 id="todo__list-item-title">Изготовить для школы №15</h2>
+                <p id="todo__list-item-par">Нужно изготовить меню #1.Школьное</p>
+
+                <div class="btn-success d-flex align-items-start justify-content-between">
+                    <p class="btn-success__text">Выполнено</p>
+                    <img src="img/check-line.svg" alt="">
+                </div>
+            </div>
+        </div>
+
         </div>
     </article>
 
@@ -162,28 +149,19 @@
 
         <script>
             const swiper = new Swiper('.swiper', {
-                    slidesPerView: 3,
-                    spaceBetween: -100,
+                slidesPerView: 3,
+                spaceBetween: -300,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
 
-                    breakpoints:{
-                        "380px":{
-                            
-                            slidesPerView: 1,
-                        },
-                    },
-
-                   
-
-                   
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-
-                   
-                });
+            const swiper_mob = new Swiper('.swiper-mob', {
+               
+            })
         </script>
-
-</body>
+        
+        </body>
 
 </html>

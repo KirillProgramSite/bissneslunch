@@ -1,6 +1,8 @@
 
 /* Шрифты */
 
+
+
 @font-face {
     font-family: 'Bebas Neue';
     src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('bebasneuebold.woff2') format('woff2'), url('bebasneuebold.woff') format('woff'), url('bebasneuebold.ttf') format('truetype');
@@ -11,12 +13,6 @@
 .form{
     border-radius: 50px;
 }
-
-.swiper {
-    padding: 0px 70px;
-    height: 300px;
-}
-
 
 
 .swiper-button-next:after,
@@ -103,9 +99,77 @@
 
 .todo__list-item{
     padding: 20px 30px;
-    width: 270px;
+    width: 500px;
+    margin-bottom: 20px;
     border-radius: 22px;
     background: #FCF0C8;
+}
+
+#todo__list-title {
+    color: #911F27;
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 24px */
+    letter-spacing: -0.6px;
+}
+
+
+#todo__list-item-title {
+    color: #630A10;
+    font-family: Bebas Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 20px */
+    letter-spacing: -0.5px;
+}
+
+#todo__list-item-par{
+    color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal; 
+        font-weight: 400;
+        line-height: 100%;
+        /* 16px */
+        letter-spacing: -0.4px; 
+}
+
+
+.btn-success{
+    transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 4px 14px;
+    background: #911F27;
+}
+
+.btn-success:hover{
+    transform: translateY(-5px);
+}
+
+.btn-success img{
+    transition: .5s ease-in-out;
+}
+
+.btn-success:hover img{
+    transform: rotate(360deg);
+}
+
+
+.btn-success__text{
+    margin-bottom: 0px;
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    /* 15px */
+    letter-spacing: -0.375px;
 }
 
 
@@ -135,6 +199,14 @@
     #hero__par{
         width: 300px;
         font-size: 16px; 
+    }
+
+    .swiper{
+        display: none;
+    }
+
+    .todo__list-item{
+        width: 350px;
     }
 }
 
