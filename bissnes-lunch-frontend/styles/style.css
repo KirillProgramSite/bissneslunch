@@ -92,10 +92,6 @@
     font-size: 16px; 
 }
 
-.todo__hero-mobile{
-    display: none;
-}
-
 
 .todo__list-item{
     padding: 20px 30px;
@@ -174,26 +170,61 @@
 
 
 
+.documents__text-title{
+    color: #630A10;
+    font-family: Bebas Neue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 32px */
+    letter-spacing: -0.8px;
+}
+
+
+.documents__text-par{
+    width: 523px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.4px;
+}
+
+.form-label {
+    color: #911F27;
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 24px */
+    letter-spacing: -0.6px;
+}
+
+.btn-form{
+    text-align: left;
+    padding: 16px 0px;
+    padding-left: 12px;
+    width: 270px;
+    border: none;
+    border-radius: 8px;
+    background: #911F27;
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 16 px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.35px;
+}
+
+
 @media (max-width: 480px) {
-    .login-form-wrapper{
-        display: none;
-    }
-    .login-form-wrapper-mobile{
-        display: block;
-
-    }
-
     .login-form-wrapper-mobile img{
         margin-top: 10px;
         width: 290px;
-    }
-
-    .todo__hero-mobile{
-        display: block;
-    }
-
-    .todo__hero{
-        display: none;
     }
 
     #hero__par{
@@ -208,11 +239,16 @@
     .todo__list-item{
         width: 350px;
     }
+
+    .documents__text-par{
+        width: 300px;
+    }
 }
 
 
 @media (max-width: 768px){
     .login-form-wrapper img{
-        width: 250px;
+        margin-top: 20px;
+        width: 300px;
     }
 }
