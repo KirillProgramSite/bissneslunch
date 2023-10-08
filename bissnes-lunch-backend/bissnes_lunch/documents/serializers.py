@@ -1,10 +1,12 @@
 from rest_framework.serializers import ModelSerializer
 
 from documents.models import Documents
+from users.models import User
+
 from users.serializers import UserSerializer
 
 class DocumentSerializer(ModelSerializer):
-    user = UserSerializer()
+    
 
     class Meta:
         model = Documents

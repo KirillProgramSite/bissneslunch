@@ -1,10 +1,18 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
-from api.views import DocumentAPIView
+from api.views import DocumentModelViewSet, TodoModelViewSet
+
+from rest_framework import routers
+
+
 
 app_name = 'api'
 
+router = routers.DefaultRouter()
+router.register(r'documents', DocumentModelViewSet)
+router.register(r'todo', TodoModelViewSet)
+
 urlpatterns = [
-    path('documents-list', DocumentAPIView.as_view()),
+    path('', include(router.urls)),
 ]
