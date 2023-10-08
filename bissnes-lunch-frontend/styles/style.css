@@ -221,6 +221,122 @@
 }
 
 
+.admin__hero-title{
+    margin-bottom: 23px;
+    color: #630A10;
+    font-family: Bebas Neue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 32px */
+    letter-spacing: -0.8px;
+}
+
+.admin__hero-par{
+    width: 523px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.4px;
+}
+
+
+.card-user{
+    padding: 20px 0px; 
+    border-radius: 23px;
+    background: #FCF0C8;
+}
+
+.user-info__title h1{
+    color: #630A10;
+    font-family: Bebas Neue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 32px */
+    letter-spacing: -0.8px;
+}
+
+.user-info__title p{
+    color: #0C9600;
+    font-family: Bebas Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.4px;
+}
+
+.user-info__up p{
+    color: #630A10;
+    font-family: Bebas Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.4px;
+}
+
+.user-info__up span{
+    color: #630A10;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.4px;
+}
+
+.card-todo h2{
+    color: #630A10;
+    font-family: Bebas Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.4px;
+}
+
+.card-todo p{
+    color: #630A10;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.4px;
+}
+
+.card-todo p.comp{
+    color: #0C9600;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.4px;
+}
+
+.card-todo button{
+    padding: 5px 6px;
+    border: none;
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 15px */
+    letter-spacing: -0.375px;
+    border-radius: 12.5px;
+    background: #911F27;
+}
+
+
+
+
+
 @media (max-width: 480px) {
     .login-form-wrapper-mobile img{
         margin-top: 10px;
@@ -243,8 +359,12 @@
     .documents__text-par{
         width: 300px;
     }
-}
 
+    .admin__hero-par{
+        width: 300px;
+    }
+}
+ 
 
 @media (max-width: 768px){
     .login-form-wrapper img{
